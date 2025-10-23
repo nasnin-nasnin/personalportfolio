@@ -1,0 +1,13 @@
+
+body {
+margin: 0;
+font-family: "Inter", sans-serif;
+background-color: #0a192f;
+color: #ccd6f6;
+overflow-x: hidden;
+}
+
+.app {
+position: relative;
+min-height: 100vh;
+}
