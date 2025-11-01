@@ -11,7 +11,7 @@ function Navbar() {
 
   // ✅ Opens your resume PDF in a new browser tab
   const openResume = () => {
-    window.open("/resume.pdf", "_blank");
+    window.open("/nasninresume.pdf", "_blank");
   };
 
   return (
