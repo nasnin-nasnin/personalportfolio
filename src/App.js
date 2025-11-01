@@ -38,7 +38,7 @@ import About from './components/About';
 import Expertise from './components/Expertise';
 import ProjectCardSection from './components/ProjectCardSection'; // your main projects section
 import ContactSection from './components/ContactSection';
-// import Certifications from "./components/Certifications";
+import Certifications from "./components/Certifications";
 import SkillsSection from "./components/SkillsSection";
 import ReactProjects from './components/ReactProjects'; // import your ReactProjects component
 
@@ -54,7 +54,7 @@ function Portfolio() {
       <About />
       <Expertise />
       <ProjectCardSection />
-      {/* <Certifications /> */}
+      <Certifications />
       <SkillsSection/>
       <ContactSection />
     </div>

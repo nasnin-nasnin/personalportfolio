@@ -1,5 +1,5 @@
 import React from 'react';
-import { FaGithub, FaLinkedin, FaInstagram, FaWhatsapp } from 'react-icons/fa';
+import { FaGithub, FaInstagram, FaWhatsapp } from 'react-icons/fa';
 import { MdEmail } from 'react-icons/md';
 import './SocialSidebar.css';
 
@@ -22,17 +22,17 @@ const SocialSidebar = () => {
             <MdEmail />
           </a>
         </li>
-        <li>
+        {/* <li>
           <a href="https://www.linkedin.com/in/your_profile" target="_blank" rel="noopener noreferrer">
             <FaLinkedin />
           </a>
-        </li>
+        </li> */}
         <li>
           <a href="https://www.instagram.com/__nasnin_" target="_blank" rel="noopener noreferrer">
             <FaInstagram />
           </a>
         </li>
-        <li>
+        {/* <li>
           <a href="https://leetcode.com/nasnin-nasnin" target="_blank" rel="noopener noreferrer">
             <img
               src="https://upload.wikimedia.org/wikipedia/commons/1/19/LeetCode_logo_black.png"
@@ -40,7 +40,7 @@ const SocialSidebar = () => {
               className="leetcode-icon"
             />
           </a>
-        </li>
+        </li> */}
       </ul>
     </div>
   );

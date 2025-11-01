@@ -5,25 +5,17 @@ import "./Certifications.css";
 const certifications = [
   {
     id: 1,
-    title: "React Developer Certificate",
-    image: "/images/portfolio.png", // Replace with your actual image path
-    issuer: "Meta",
-    year: "2023",
+    title: "Software Project Development",
+    image: "/images/cert1.jpeg", // Replace with your actual image path
+    year: "2025",
   },
   {
     id: 2,
-    title: "Python for Everybody",
-    image: "/images/portfolio.png",
-    issuer: "University of Michigan",
-    year: "2022",
+    title: "Best programmer Award",
+    image: "/images/cert2.jpeg",
+    year: "2025",
   },
-  {
-    id: 3,
-    title: "Frontend Development",
-    image: "/images/portfolio.png",
-    issuer: "freeCodeCamp",
-    year: "2021",
-  },
+  
   // Add more certifications as needed
 ];
 

@@ -2,6 +2,11 @@ import React from "react";
 
 const projects = [
   {
+    title: "MyG site",
+    imgSrc:
+      './images/mygsite.jpeg', // Replace with your own image URL or local import
+  },
+  {
     title: "Role-Based Access System",
     imgSrc:
       './images/accesssystemwork.jpeg', // Replace with your own image URL or local import

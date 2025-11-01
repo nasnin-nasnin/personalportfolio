@@ -53,9 +53,9 @@ const ContactSection = () => {
           <a href="https://wa.me/9037370468" target="_blank" rel="noopener noreferrer">Whatsapp</a>
           <a href="https://github.com/nasnin-nasnin" target="_blank" rel="noopener noreferrer">GitHub</a>
           <a href="mailto:nasninnaznin@gmail.com" target="_blank" rel="noopener noreferrer">E-MAIL</a>
-          <a href="https://www.linkedin.com/in/your_profile" target="_blank" rel="noopener noreferrer">LinkedIn</a>
+          {/* <a href="https://www.linkedin.com/in/your_profile" target="_blank" rel="noopener noreferrer">LinkedIn</a> */}
           <a href="https://www.instagram.com/__nasnin_" target="_blank" rel="noopener noreferrer">Instagram</a>
-          <a href="https://leetcode.com/nasnin-nasnin" target="_blank" rel="noopener noreferrer">Leetcode</a>
+          {/* <a href="https://leetcode.com/nasnin-nasnin" target="_blank" rel="noopener noreferrer">Leetcode</a> */}
         </div>
         <div className="right-text">
           All rights reserved — © nasnin
