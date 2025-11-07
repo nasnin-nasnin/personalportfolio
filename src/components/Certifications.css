@@ -22,14 +22,14 @@
 
 
 .cert-card {
-  background-color: #fff;
+  background-color: #112240; /* Deep navy tone */
   border-radius: 12px;
-  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.08);
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.2);
   overflow: hidden;
-  transition: transform 0.2s ease;
-  max-width: 300px;
-  width: 100%;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  cursor: pointer;
 }
+
 
 .cert-card:hover {
   transform: scale(1.03);
@@ -48,19 +48,19 @@
 .cert-info h3 {
   font-size: 1.1rem;
   margin: 0.5rem 0;
-  color: #222;
+  color: #ffffff; /* White text */
 }
 
 .cert-info p {
   font-size: 0.95rem;
-  color: #666;
+  color: #c0c0c0; /* Light gray */
 }
 
 .cert-year {
   display: inline-block;
   margin-top: 0.5rem;
   font-size: 0.85rem;
-  color: #888;
+  color: #a8b2d1; /* Muted bluish gray for contrast */
 }
 .cert-grid {
   display: grid;
@@ -72,5 +72,109 @@
 @media (min-width: 600px) {
   .cert-grid {
     grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+  }
+}
+/* --- Modal Box --- */
+/* --- Certificate grid images --- */
+.cert-card {
+  background: #112240;
+  border-radius: 10px;
+  overflow: hidden;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  cursor: pointer;
+}
+
+
+
+/* --- Certificate image inside grid --- */
+.cert-image {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+  transition: transform 0.4s ease;
+}
+
+.cert-card:hover .cert-image {
+  transform: scale(1.1);
+}
+
+/* --- Modal (full view) --- */
+.modal-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(10, 25, 47, 0.9);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 999;
+}
+
+/* --- Modal box --- */
+.modal-content {
+  position: relative;
+  background-color: #0a192f;
+  padding: 1rem;
+  border-radius: 12px;
+  max-width: 95%;
+  max-height: 95%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  overflow: auto;
+  box-shadow: 0 0 25px rgba(255, 255, 255, 0.2);
+  animation: zoomIn 0.3s ease;
+}
+
+/* --- Zoomable certificate image --- */
+.modal-image {
+  width: auto;
+  max-width: 100%;
+  max-height: 85vh;
+  object-fit: contain;
+  border-radius: 10px;
+  transition: transform 0.4s ease;
+  cursor: zoom-in;
+}
+
+.modal-image:hover {
+  transform: scale(1.15); /* zoom effect */
+  cursor: zoom-out;
+}
+
+/* --- Close button --- */
+.close-btn {
+  position: absolute;
+  top: 12px;
+  right: 18px;
+  background: rgba(0, 0, 0, 0.4);
+  border: none;
+  color: #fff;
+  font-size: 1.8rem;
+  cursor: pointer;
+  border-radius: 50%;
+  width: 36px;
+  height: 36px;
+  line-height: 36px;
+  text-align: center;
+  transition: all 0.2s ease;
+}
+
+.close-btn:hover {
+  background: rgba(255, 255, 255, 0.2);
+  transform: scale(1.1);
+}
+
+/* --- Animation --- */
+@keyframes zoomIn {
+  from {
+    transform: scale(0.8);
+    opacity: 0;
+  }
+  to {
+    transform: scale(1);
+    opacity: 1;
   }
 }
