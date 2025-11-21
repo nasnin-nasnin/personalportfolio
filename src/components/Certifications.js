@@ -20,6 +20,18 @@ const certifications = [
     image: "/images/bootcss.jpeg",
     year: "2025",
   },
+  {
+    id: 4,
+    title: "C++ Bootcamp ",
+    image: "/images/c++.jpeg",
+    year: "2025",
+  },
+    {
+    id: 5,
+    title: "html CSS Bootcamp",
+    image: "/images/htmlbootcamp.jpeg",
+    year: "2025",
+  },
 ];
 
 function Certifications() {
